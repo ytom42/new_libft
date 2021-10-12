@@ -6,13 +6,13 @@
 /*   By: ytomiyos <ytomiyos@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/25 14:26:15 by ytomiyos          #+#    #+#             */
-/*   Updated: 2020/07/06 09:45:00 by ytomiyos         ###   ########.fr       */
+/*   Updated: 2021/10/12 19:44:05 by ytomiyos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t		ft_strlcat(char *dst, const char *src, \
+size_t	ft_strlcat(char *dst, const char *src, \
 size_t dstsize)
 {
 	size_t		i;

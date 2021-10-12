@@ -6,7 +6,7 @@
 /*   By: ytomiyos <ytomiyos@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/27 13:08:56 by ytomiyos          #+#    #+#             */
-/*   Updated: 2020/07/03 14:14:32 by ytomiyos         ###   ########.fr       */
+/*   Updated: 2021/10/12 19:43:55 by ytomiyos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 		return (NULL);
 	s1_len = ft_strlen(s1);
 	s2_len = ft_strlen(s2);
-	ptr = (char*)malloc(sizeof(char) * (s1_len + s2_len) + 1);
+	ptr = (char *)malloc(sizeof(char) * (s1_len + s2_len) + 1);
 	if (!ptr)
 		return (NULL);
 	ft_memcpy(ptr, s1, s1_len);

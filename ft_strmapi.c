@@ -6,7 +6,7 @@
 /*   By: ytomiyos <ytomiyos@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/30 19:56:18 by ytomiyos          #+#    #+#             */
-/*   Updated: 2020/06/30 23:19:28 by ytomiyos         ###   ########.fr       */
+/*   Updated: 2021/10/12 19:44:20 by ytomiyos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	i = 0;
 	if (!s || !f)
 		return (NULL);
-	ptr = (char*)malloc(sizeof(char) * ft_strlen(s) + 1);
+	ptr = (char *)malloc(sizeof(char) * ft_strlen(s) + 1);
 	if (!ptr)
 		return (NULL);
 	while (s[i])

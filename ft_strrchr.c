@@ -6,7 +6,7 @@
 /*   By: ytomiyos <ytomiyos@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/25 21:32:58 by ytomiyos          #+#    #+#             */
-/*   Updated: 2020/07/04 19:45:35 by ytomiyos         ###   ########.fr       */
+/*   Updated: 2021/10/12 19:45:56 by ytomiyos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,6 @@ char	*ft_strrchr(const char *s, int c)
 		i++;
 	}
 	if (s[i] == c)
-		return (char *)(&s[i]);
+		return ((char *)(&s[i]));
 	return (ptr);
 }

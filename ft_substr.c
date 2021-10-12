@@ -6,13 +6,13 @@
 /*   By: ytomiyos <ytomiyos@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/27 10:24:45 by ytomiyos          #+#    #+#             */
-/*   Updated: 2020/07/04 20:37:59 by ytomiyos         ###   ########.fr       */
+/*   Updated: 2021/10/12 19:44:44 by ytomiyos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char		*ft_substr(char const *s, unsigned int start, size_t len)
+char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	size_t		i;
 	size_t		s_len;
@@ -26,7 +26,7 @@ char		*ft_substr(char const *s, unsigned int start, size_t len)
 		return (ft_strdup(""));
 	if (s_len > len)
 		s_len = len;
-	ptr = (char*)malloc(sizeof(char) * (s_len + 1));
+	ptr = (char *)malloc(sizeof(char) * (s_len + 1));
 	if (!ptr)
 		return (NULL);
 	while (len > i && s[i + start])

@@ -6,7 +6,7 @@
 /*   By: ytomiyos <ytomiyos@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/23 23:21:27 by ytomiyos          #+#    #+#             */
-/*   Updated: 2020/07/06 09:43:56 by ytomiyos         ###   ########.fr       */
+/*   Updated: 2021/10/12 19:46:24 by ytomiyos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,8 @@ void	*ft_memccpy(void *dst, const void *src, \
 	unsigned char	*d;
 	unsigned char	*s;
 
-	d = (unsigned char*)dst;
-	s = (unsigned char*)src;
+	d = (unsigned char *)dst;
+	s = (unsigned char *)src;
 	i = 0;
 	if (!dst && !src)
 		return (NULL);

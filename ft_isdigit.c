@@ -6,13 +6,13 @@
 /*   By: ytomiyos <ytomiyos@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/26 15:40:33 by ytomiyos          #+#    #+#             */
-/*   Updated: 2020/06/27 01:04:03 by ytomiyos         ###   ########.fr       */
+/*   Updated: 2021/10/12 19:43:06 by ytomiyos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_isdigit(int c)
+int	ft_isdigit(int c)
 {
 	if (c >= '0' && c <= '9')
 		return (1);

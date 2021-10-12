@@ -6,13 +6,13 @@
 /*   By: ytomiyos <ytomiyos@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/27 21:26:58 by ytomiyos          #+#    #+#             */
-/*   Updated: 2020/07/07 15:35:59 by ytomiyos         ###   ########.fr       */
+/*   Updated: 2021/10/12 19:45:35 by ytomiyos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		check_c(char *str, char c)
+int	check_c(char *str, char c)
 {
 	int		i;
 
@@ -46,7 +46,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	len = end_index - start_index + 1;
 	if (len <= 0)
 		return (ft_strdup(""));
-	ptr = (char*)malloc(sizeof(char) * len + 1);
+	ptr = (char *)malloc(sizeof(char) * len + 1);
 	if (!ptr)
 		return (NULL);
 	ft_strlcpy(ptr, &s1[start_index], len + 1);

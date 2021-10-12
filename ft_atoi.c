@@ -6,13 +6,13 @@
 /*   By: ytomiyos <ytomiyos@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/22 15:25:03 by ytomiyos          #+#    #+#             */
-/*   Updated: 2020/07/06 10:13:13 by ytomiyos         ###   ########.fr       */
+/*   Updated: 2021/10/12 19:45:05 by ytomiyos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_atoi(const char *str)
+int	ft_atoi(const char *str)
 {
 	int		i;
 	int		sign;

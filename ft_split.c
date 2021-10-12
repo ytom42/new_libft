@@ -6,13 +6,13 @@
 /*   By: ytomiyos <ytomiyos@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/28 12:23:54 by ytomiyos          #+#    #+#             */
-/*   Updated: 2020/07/12 10:12:10 by ytomiyos         ###   ########.fr       */
+/*   Updated: 2021/10/12 19:54:34 by ytomiyos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static	int		count_elements(char *str, char c)
+static	int	count_elements(char *str, char c)
 {
 	int		i;
 	int		count;
@@ -61,7 +61,7 @@ static	char	*new_list(char *s, char c)
 	return (tmp);
 }
 
-char			**ft_split(char const *s, char c)
+char	**ft_split(char const *s, char c)
 {
 	int		i;
 	int		elements_n;
@@ -71,14 +71,14 @@ char			**ft_split(char const *s, char c)
 	if (!s)
 		return (NULL);
 	elements_n = count_elements((char *)s, c);
-	if (!(result = (char**)malloc(sizeof(char*) * (elements_n + 1))))
-		return (NULL);
+	result = (char **)malloc(sizeof(char *) * (elements_n + 1));
 	result[elements_n] = NULL;
 	while (i < elements_n)
 	{
 		while (*s == c)
 			s++;
-		if (!(result[i] = new_list((char *)s, c)))
+		result[i] = new_list((char *)s, c);
+		if (!result[i])
 		{
 			ft_free(result);
 			return (NULL);

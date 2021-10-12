@@ -6,15 +6,15 @@
 /*   By: ytomiyos <ytomiyos@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/30 07:53:59 by ytomiyos          #+#    #+#             */
-/*   Updated: 2020/07/04 20:37:31 by ytomiyos         ###   ########.fr       */
+/*   Updated: 2021/10/12 19:54:40 by ytomiyos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int		count_len(int n)
+static int	count_len(int n)
 {
-	int			len;
+	int		len;
 
 	len = 0;
 	if (n == 0)
@@ -32,7 +32,7 @@ static int		count_len(int n)
 	return (len);
 }
 
-char			*ft_itoa(int n)
+char	*ft_itoa(int n)
 {
 	int		i;
 	int		len;
@@ -42,8 +42,7 @@ char			*ft_itoa(int n)
 	if (n == -2147483648)
 		return (ft_strdup("-2147483648"));
 	len = count_len(n);
-	if (!(ptr = (char*)malloc(sizeof(char) * len + 1)))
-		return (NULL);
+	ptr = (char *)malloc(sizeof(char) * len + 1);
 	if (n < 0)
 	{
 		n = -n;
